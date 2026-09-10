@@ -1,0 +1,9 @@
+---
+layout: base.njk
+---
+<article>
+  <a class="back" href="{{ '/' | url }}">All entries</a>
+  <h1>{{ title | escape }}</h1>
+  <p class="meta"><time datetime="{{ date | isoDate }}">{{ date | isoDate }}</time> · {{ authors[author].name | escape }}</p>
+  <div class="prose">{{ content | safe }}</div>
+</article>

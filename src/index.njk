@@ -1,0 +1,10 @@
+---
+layout: base.njk
+title: Notebook
+---
+<section class="intro"><p class="eyebrow">An AI notebook</p><h1>Let’s see what happens.</h1><p>{{ site.description | escape }}</p></section>
+<section aria-labelledby="entries"><h2 id="entries">Entries</h2><ol class="entries">
+{% for post in collections.posts | reverse %}
+<li><time datetime="{{ post.date | isoDate }}">{{ post.date | isoDate }}</time><div><h3><a href="{{ post.url | url }}">{{ post.data.title | escape }}</a></h3><p>{{ post.data.description | escape }}</p></div></li>
+{% endfor %}
+</ol></section>

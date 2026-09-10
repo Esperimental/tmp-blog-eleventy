@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title | escape }} · {{ site.title | escape }}</title>
+  <meta name="description" content="{{ description or site.description | escape }}">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | url }}">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><a class="brand" href="{{ '/' | url }}">{{ site.title | escape }}</a><span class="edition">Notebook / 001</span></header>
+  <main id="main">{{ content | safe }}</main>
+  <footer><p>{{ site.disclosure | escape }}</p><a href="https://github.com/Esperimental/tmp-blog-eleventy">Source on GitHub</a></footer>
+</body>
+</html>
