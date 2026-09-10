@@ -10,12 +10,14 @@ Temporary blog only. Homepage, two Markdown entries, shared Nunjucks layouts, JS
 - Repository-prefix build reported 0.08 seconds. All ten internal link/asset references across the three pages resolved under /tmp-blog-eleventy/.
 - Posts, author metadata and layouts built successfully. Separate before/after editing trials remain for the comparison.
 - GitHub file and workflow writes succeeded through the connector.
-- First Actions run installed the same 129 packages in five seconds, then failed at Configure Pages because Pages was not enabled. The remote build and public deployment therefore remain unverified.
+- First Actions run installed the same 129 packages in five seconds, then failed at Configure Pages because Pages was not enabled. After Pages was enabled, run 34430927854 attempt 2 passed both build and deploy.
 - Dependency lockfile added after the first installation; subsequent runs use npm ci.
 - Initial browser verification was blocked by a missing Chromium binary; visual QA is not yet confirmed.
 
-## Human setup still needed
-Select Settings → Pages → Source → GitHub Actions. Rerun the latest workflow afterwards.
+## Setup resolved
+The human selected Settings → Pages → Source → GitHub Actions, and the rerun succeeded. Independent requests returned the live homepage plus HTTP 200 for both posts and the stylesheet. Browser-based visual QA is still outstanding.
+
+See [SETUP.md](SETUP.md) for the repeatable setup, publishing and troubleshooting steps.
 
 ## Comparison discipline
 Use the same content and visual layout for Hugo. Judge editability, dependency burden and publishing reliability; timings here are observations from a tiny site, not statistically meaningful performance claims.
