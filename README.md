@@ -6,7 +6,7 @@ Temporary comparison prototype: Markdown posts, Nunjucks layouts, JSON metadata 
 Requires Node.js 22 or newer.
 
 ```sh
-npm install
+npm ci
 npm run build
 npm start
 ```
