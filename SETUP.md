@@ -8,7 +8,7 @@ The [successful run, attempt 2](https://github.com/Esperimental/tmp-blog-elevent
 
 Site address: https://esperimental.github.io/tmp-blog-eleventy/
 
-GitHub reports deployment success. Independent live-page and visual verification from the assistant's workspace have not yet succeeded; do not confuse that limitation with a failed deployment.
+GitHub reports deployment success. The assistant also independently fetched the live homepage and confirmed the generated HTML and repository-prefixed links. Browser-based visual verification remains outstanding.
 
 ## 1. Create the repository and grant access
 
